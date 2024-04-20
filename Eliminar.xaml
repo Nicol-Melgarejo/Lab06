@@ -1,0 +1,25 @@
+﻿<Window x:Class="Lab06.Eliminar"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab06"
+        mc:Ignorable="d"
+        Title="Eliminar Empleado" Height="450" Width="800">
+    <Grid>
+        <Grid Margin="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Label Content="ID del Empleado:" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBox x:Name="txtIdEmpleado" Grid.Row="0" Margin="10" Width="200"/>
+
+            <Button Content="Eliminar" Click="Eliminar_Click" Grid.Row="1" Margin="10"/>
+        </Grid>
+        <Button Width="126" Height="28" Margin="0 20" Background="#FFFF7F7F" FontWeight="Bold" Content="Salir" Foreground="White" FontFamily="Segoe UI" FontSize="14" Click="Button_Click1"/>
+    </Grid>
+</Window>
